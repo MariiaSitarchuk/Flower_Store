@@ -25,10 +25,12 @@ Add to ci.yaml between java install and Test → Linter
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-## Still need to add:
+## Still need to:
 
-- getPrice in class FlowerBucket (Demetra Law)
+- check if getPrice in class FlowerBucket (Demetra Law) is OK
 
-- class Store with a search method
+- understand what is wrong with  DOCTEST HTML ???
+
+- add class Store with a search method
 
 - add tests
