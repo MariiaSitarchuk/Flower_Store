@@ -8,11 +8,11 @@ public class FlowerBucket {
     private ArrayList<FlowerPack> packList;
 
     public void FlowerBucket() {
-        this.packList = new ArrayList<>();
+        packList = new ArrayList<FlowerPack>();
     }
 
     public void addPack(FlowerPack newPack){
-        this.packList.add(newPack);
+        packList.add(newPack);
     }
 
     public int getPrice() {
