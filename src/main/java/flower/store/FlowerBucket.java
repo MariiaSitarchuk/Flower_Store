@@ -7,12 +7,12 @@ public class FlowerBucket {
     //private int amount;
     private ArrayList<FlowerPack> packList;
 
-    public FlowerBucket() {
-        packList = new ArrayList<>();
+    public void FlowerBucket() {
+        this.packList = new ArrayList<>();
     }
 
     public void addPack(FlowerPack newPack){
-        packList.add(newPack);
+        this.packList.add(newPack);
     }
 
     public int getPrice() {
