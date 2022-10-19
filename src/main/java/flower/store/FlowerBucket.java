@@ -13,6 +13,7 @@ public class FlowerBucket {
 
     public void addPack(FlowerPack newPack){
         packList.add(newPack);
+    }
 
     public int getPrice() {
         int sum = 0;
