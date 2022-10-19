@@ -4,10 +4,10 @@ package store;
 //need to take several FlowerPack
 
 public class FlowerBucket {
-    private FlowerPack flower_pack;
+    private FlowerPack flowerPack;
     private int amount;
 
     public int getPrice() {
-        return (flower_pack.getPrice() * amount);
+        return (flowerPack.getPrice() * amount);
     }
 }
