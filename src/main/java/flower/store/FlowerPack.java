@@ -1,4 +1,4 @@
-package flowerStore;
+package store;
 
 /**
 * pack of the same flowers
