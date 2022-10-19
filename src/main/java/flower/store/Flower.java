@@ -11,7 +11,7 @@ public class Flower {
     private double sepalLength;
     private FlowerColor color;
     @Getter
-    private double price;
+    private int price;
     @Getter
     private FlowerType flowerType;
 
