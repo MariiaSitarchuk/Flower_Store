@@ -7,6 +7,10 @@ package store;
 public class FlowerPack {
     private Flower flower;
     private int amount;
+    
+    public void FlowerPack(Flower initflower, int initamount) {
+        amount = initamount;
+        flower = initflower;
 
     public int getPrice() {
         return (flower.getPrice() * amount);
