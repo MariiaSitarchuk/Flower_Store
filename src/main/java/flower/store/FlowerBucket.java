@@ -4,10 +4,21 @@ package store;
 //need to take several FlowerPack
 
 public class FlowerBucket {
-    private FlowerPack flowerPack;
-    private int amount;
+    //private int amount;
+    private ArrayList<FlowerPack> packList;
+
+    public FlowerBucket() {
+        packList = new ArrayList<>();
+    }
+
+    public void addPack(FlowerPack newPack){
+        packList.add(newPack);
 
     public int getPrice() {
-        return (flowerPack.getPrice() * amount);
+        int sum = 0;
+        for (FlowerPack pack : packList) {
+            sum = sum + pack.getPrice();
+        }
+        return sum;
     }
 }
