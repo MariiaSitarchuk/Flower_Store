@@ -1,10 +1,10 @@
-package flower.store;
+package store;
 
 public enum FlowerColor {
     /**
      * Flower colors.
      */
-    RED("#FF0000"), BLUE("#0000FF");
+    RED("#FF0000"), BLUE("#0000FF"), PINK("#FF00FF");
     private final String stringRepresentation;
 
     FlowerColor(String stringRepresentation) {
