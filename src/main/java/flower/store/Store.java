@@ -1,4 +1,4 @@
-package store
+package store;
 
 public class Store {
     
