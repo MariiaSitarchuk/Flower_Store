@@ -5,11 +5,7 @@ package store;
 
 public class FlowerBucket {
     //private int amount;
-    private ArrayList<FlowerPack> packList;
-
-    public void FlowerBucket() {
-        packList = new ArrayList<FlowerPack>();
-    }
+    private final ArrayList<FlowerPack> packList = new ArrayList<FlowerPack>();
 
     public void add(FlowerPack newPack) {
         packList.add(newPack);
