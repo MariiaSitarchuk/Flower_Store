@@ -21,7 +21,7 @@ public class Flower {
     }
     
     public void setColor(FlowerColor col) {
-        this.color = col.toString();
+        this.color = col;
     }
 
     public String getColor() {
