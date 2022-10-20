@@ -9,10 +9,10 @@ public class FlowerPack {
     private int amount;
     
     public void FlowerPack(Flower initflower, int initamount) {
-        amount = initamount;
-        flower = initflower;
+        this.amount = initamount;
+        this.flower = initflower;
 
-    public int getPrice() {
+    public double getPrice() {
         return (flower.getPrice() * amount);
     }
 }
