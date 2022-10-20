@@ -8,7 +8,7 @@ public class FlowerPack {
     private Flower flower;
     private int amount;
     
-    public void FlowerPack(Flower initflower, int initamount) {
+    public FlowerPack(Flower initflower, int initamount) {
         this.amount = initamount;
         this.flower = initflower;
     }
