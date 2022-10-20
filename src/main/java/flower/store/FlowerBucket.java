@@ -11,7 +11,7 @@ public class FlowerBucket {
         packList = new ArrayList<FlowerPack>();
     }
 
-    public void add(FlowerPack newPack){
+    public void add(FlowerPack newPack) {
         packList.add(newPack);
     }
 
