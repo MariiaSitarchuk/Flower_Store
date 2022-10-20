@@ -11,7 +11,7 @@ public class FlowerBucketTest {
     private static final int MAX_QUANTITY = 1000;
     private static final int MAX_PRICE = 100;
     private static final int RAN_PRICE = RANDOM_GENERATOR.nextInt(MAX_PRICE);
-    private static final int RAN_QUANTITY = RANDOM_GENERATOR.nextInt(MAX_QUANTITY);
+    private static final int RAN_QUANT = RANDOM_GENERATOR.nextInt(MAX_QUANTITY);
 
     private FlowerBucket flowerBucket;
 
@@ -19,13 +19,13 @@ public class FlowerBucketTest {
     public void init() {
         Flower flower = new Rose();
         flower.setPrice(RAN_PRICE);
-        FlowerPack flowerPack = new FlowerPack(flower, RAN_QUANTITY);
+        FlowerPack flowerPack = new FlowerPack(flower, RAN_QUANT);
         flowerBucket = new FlowerBucket();
         flowerBucket.add(flowerPack);
     }
 
     @Test
     public void testPrice() {
-        Assertions.assertEquals(RAN_PRICE * RAN_QUANTITY, flowerBucket.getPrice());
+        Assertions.assertEquals(RAN_PRICE * RAN_QUANT, flowerBucket.getPrice());
     }
 }
