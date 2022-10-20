@@ -12,12 +12,12 @@ public class Flower {
 //    @Getter
 //    private FlowerType flowerType;
     
-    public Flower() {};
+    public Flower() { };
     
-    public Flower(double initsepalLength, FlowerColor initcolor, int initprice) {
-        setColor(initcolor);
-        this.sepalLength = initsepalLength;
-        this.price = initprice;
+    public Flower(double inisepalLength, FlowerColor inicolor, int iniprice) {
+        setColor(inicolor);
+        this.sepalLength = inisepalLength;
+        this.price = iniprice;
     }
     
     public void setColor(FlowerColor col) {
