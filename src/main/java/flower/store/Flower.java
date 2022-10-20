@@ -9,12 +9,20 @@ public class Flower {
     private double sepalLength;
     private FlowerColor color;
     private int price;
-    @Getter
-    private FlowerType flowerType;
+//    @Getter
+//    private FlowerType flowerType;
     
-//    public Flower() {
-//        
-//    }
+    public Flower() {};
+    
+    public Flower(double initsepalLength, FlowerColor initcolor, int initprice) {
+        setColor(initcolor);
+        this.sepalLength = initsepalLength;
+        this.price = initprice;
+    }
+    
+    public void setColor(FlowerColor col) {
+        this.color = col.toString();
+    }
 
     public String getColor() {
         return color.toString();
