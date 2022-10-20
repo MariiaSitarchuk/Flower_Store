@@ -11,6 +11,7 @@ public class FlowerPack {
     public void FlowerPack(Flower initflower, int initamount) {
         this.amount = initamount;
         this.flower = initflower;
+    }
 
     public double getPrice() {
         return (flower.getPrice() * amount);
