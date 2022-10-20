@@ -2,9 +2,7 @@
 
 Learning classes in Java with a Flower Store example
 
----------------------------------------------------------------------------------------------------------------------------------------------------------;
-
-### Introducted to "Linting"
+## Introducted to "Linting"
 
 Add to ci.yaml between java install and Test → Linter
 
@@ -22,8 +20,6 @@ Add to ci.yaml between java install and Test → Linter
       VALIDATE_ALL_CODEBASE: false
       DEFAULT_BRANCH: master
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
----------------------------------------------------------------------------------------------------------------------------------------------------------;
 
 ## Still need to:
 
