@@ -12,7 +12,7 @@ public class FlowerBucket {
         packList.add(newPack);
     }
 
-    public int getPrice() {
+    public double getPrice() {
         double sum = 0.0;
         for (FlowerPack pack : packList) {
             sum = sum + pack.getPrice();
