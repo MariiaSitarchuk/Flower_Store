@@ -17,7 +17,9 @@ public class Store {
             
             // lets get a Flower (type)
             while (check == True) {
-                System.out.println("Enter a type of flower you are searching for: ");
+                System.out.println(
+                    "Enter a type of flower you are searching for: "
+                    );
                 String fl_type_init = scanner.nextLine();
                 fl_type = fl_type_init.toUpperCase();
             
@@ -33,7 +35,9 @@ public class Store {
                     check = False;
                 }
                 else {
-                    System.out.println("Possible types: Chamomile, Rose, Tulip.");
+                    System.out.println(
+                        "Possible types: Chamomile, Rose, Tulip."
+                        );
                 }
             }
             // we have a Flower
@@ -53,12 +57,16 @@ public class Store {
                 }
 
                 if (errorer == True) {
-                    System.out.println("The amount should be a positive integer.");
+                    System.out.println(
+                        "The amount should be a positive integer."
+                        );
                 }
                 else {
                     fl_amount = Integer.valueOf(fl_amount_init);
                     if (fl_amount <= 0) {
-                        System.out.println("The amount should be a positive integer.");
+                        System.out.println(
+                            "The amount should be a positive integer."
+                            );
                     }
                     else {
                         check = False;
@@ -67,11 +75,14 @@ public class Store {
                 }
             }
          
-            // we got the amount, so lets make a FlowerPack and add it to the FlowerBucket
+            // we got the amount, so lets make a FlowerPack
+            // and add it to the FlowerBucket
         
             FlowerPack fl_pack = new FlowerPack(flower, fl_amount);
             double pack_price = fl_pack.getPrice();
-            Sysytem.out.println("The price of this pack will be: " + pack_price);
+            Sysytem.out.println(
+                "The price of this pack will be: " + pack_price
+                );
             check = True;
             
             System.out.println("Do you want to add it to your bucket?");
