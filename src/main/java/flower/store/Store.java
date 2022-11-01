@@ -20,14 +20,14 @@ public class Store {
                 String fl_type_init = scanner.nextLine();
                 fl_type = fl_type_init.toUpperCase();
             
-                if (fl_type == "CHAMOMILE") {
+                if (fl_type.equals("CHAMOMILE")) {
                     flower = new Chamomile();
                     check = False;
                 }
-                else if (fl_type == "ROSE") {
+                else if (fl_type.equals("ROSE")) {
                     check = False;
                 }
-                else if (fl_type == "TULIP") {
+                else if (fl_type.equals("TULIP")) {
                     flower = new Tulip();
                     check = False;
                 }
@@ -78,11 +78,11 @@ public class Store {
             while (check == True) {
                 String user_wish_init = scanner.nextLine();
                 String user_wish = user_wish_init.toUpperCase();
-                if (user_wish == "Y") {
+                if (user_wish.equals("Y")) {
                     fl_buck.add(fl_pack);
                     check = False;
                 }
-                else if (user_wish = "N") {
+                else if (user_wish.equals("N")) {
                     check = False;
                 }
                 else {
@@ -98,10 +98,10 @@ public class Store {
             while (check == True) {
                 String user_wish_init = scanner.nextLine();
                 String user_wish = user_wish_init.toUpperCase();
-                if (user_wish == "Y") {
+                if (user_wish.equals("Y")) {
                     check = False;
                 }
-                else if (user_wish = "N") {
+                else if (user_wish.equals("N")) {
                     check = False;
                     searching = False;
                 }
