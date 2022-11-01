@@ -1,3 +1,4 @@
+/*
 package store;
 import java.util.*;
 
@@ -116,3 +117,5 @@ public class Store {
         Sysytem.out.println("The price of your bucket will be: " + buck_price);
     }
 }
+
+*/
