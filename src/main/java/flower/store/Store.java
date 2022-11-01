@@ -1,5 +1,5 @@
 package store;
-import java.util.Scanner;
+import java.util.*;
 
 public class Store {
     
@@ -69,7 +69,7 @@ public class Store {
             // we got the amount, so lets make a FlowerPack and add it to the FlowerBucket
         
             FlowerPack fl_pack = new FlowerPack(flower, fl_amount);
-            double pack_price = fl_pack.getPrice()
+            double pack_price = fl_pack.getPrice();
             Sysytem.out.println("The price of this pack will be: " + pack_price);
             check = True;
             
@@ -112,7 +112,7 @@ public class Store {
             }
         }
         
-        double buck_price = fl_buck.getPrice()
+        double buck_price = fl_buck.getPrice();
         Sysytem.out.println("The price of your bucket will be: " + buck_price);
     }
 }
